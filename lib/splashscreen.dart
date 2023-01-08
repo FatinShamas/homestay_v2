@@ -68,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen> {
             print(response.body);
         var jsonResponse = json.decode(response.body);
         if (response.statusCode == 200 && jsonResponse['status'] == "success") {
-          //var jsonResponse = json.decode(response.body);
+       
           User user = User.fromJson(jsonResponse['data']);
           Timer(
               const Duration(seconds: 3),

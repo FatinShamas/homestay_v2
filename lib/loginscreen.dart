@@ -3,10 +3,11 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:homestay_v2/homescreen.dart';
-import 'package:homestay_v2/loginuser.dart';
+import 'package:homestay_v2/sellerscreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 import '../../config.dart';
+import 'sellerscreen.dart';
 import 'registrationscreen.dart';
 import 'user.dart';
 
@@ -190,7 +191,7 @@ class _LoginScreenState extends State<LoginScreen> {
         User user = User.fromJson(jsonResponse['data']);
         print(user.phone);
         Navigator.push(context,
-            MaterialPageRoute(builder: (content) => LoginUser(user: user)));
+            MaterialPageRoute(builder: (content) => SellerScreen(user: user)));
       } else {
         Fluttertoast.showToast(
             msg: "Login Failed",

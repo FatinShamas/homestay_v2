@@ -40,7 +40,7 @@ class _HomescreenState extends State<Homescreen> {
           child: ListView(
             children: [
               UserAccountsDrawerHeader(
-                accountEmail: const Text('user@gmail.com',
+                accountEmail: const Text('Faris@gmail.com',
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -61,12 +61,7 @@ class _HomescreenState extends State<Homescreen> {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
-                        Text('user',
-                            style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black)),
-                        Text('@user',
+                        Text('Faris123',
                             style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
